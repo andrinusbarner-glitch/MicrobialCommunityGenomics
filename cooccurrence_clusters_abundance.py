@@ -29,7 +29,12 @@ def load(data_dir):
     env = env.set_index("sample_id").reindex(pa.columns)
     assert env["environment"].notna().all(), "samples without environment label"
     return pa, tax, env["environment"]
-
+"""
+Loads presence/absence data (whether each mOTU is detected).
+Loads taxonomy (which organisms they belong to).
+Loads environmental information (e.g. habitat type).
+Makes sure sample IDs match across datasets.
+"""
 
 def hypergeom_stats(X):
     """X: motus x samples (float32 0/1). Returns observed, expected, variance
@@ -57,6 +62,15 @@ def association_z(pa, env, stratify=True):
         Osum, Esum, Vsum = Osum + O, Esum + E, Vsum + V
     return (Osum - Esum) / np.sqrt(np.maximum(Vsum, 1e-12))
 
+"""
+Compares how often two mOTUs occur together against how often you'd expect by chance.
+
+Calculates a z-score:
+- Positive = occur together more than expected.
+- Negative = occur together less than expected.
+
+Can calculate this globally or separately within each environment (stratification), avoiding associations caused simply by organisms preferring the same habitat.
+"""
 
 def load_counts(data_dir, pa):
     """Read the read-count matrix and align it exactly to the PA matrix."""
@@ -68,6 +82,12 @@ def load_counts(data_dir, pa):
     print(f"counts vs PA: {mismatch:.4%} of cells disagree")
     return cnt
 
+"""
+Loads the original read-count matrix, which contains the abundance of each mOTU in each sample.
+Aligns the count matrix with the presence/absence matrix.
+Checks that the two matrices agree (i.e. counts greater than zero correspond to presence).
+This allows the analysis to investigate not only whether microorganisms occur together, but also how their abundances vary together.
+"""
 
 def clr_present(counts):
     """Centred log-ratio computed ONLY over the mOTUs detected in each sample.
@@ -80,7 +100,12 @@ def clr_present(counts):
     mean_log = logC.sum(axis=0) / P.sum(axis=0)          # per sample
     L = (logC - mean_log[None, :]) * P
     return L, P
-
+"""
+Applies a centred log-ratio (CLR) transformation to the read counts.
+Accounts for the compositional nature of microbiome sequencing data.
+Calculates the log abundance of each detected mOTU relative to the mean log abundance of all detected mOTUs in that sample.
+Keeps absent mOTUs excluded from subsequent pairwise correlations.
+"""
 
 def _fisher_accumulate(L, P, cols, min_n, block, Zsum, Wsum):
     """Pairwise-complete Pearson r of CLR values for one stratum (set of
@@ -103,6 +128,13 @@ def _fisher_accumulate(L, P, cols, min_n, block, Zsum, Wsum):
         Zsum[b] += (np.arctanh(r) * w).astype(np.float32)
         Wsum[b] += w.astype(np.float32)
 
+"""
+Calculates Pearson correlations between pairs of mOTUs using their CLR-transformed abundances.
+Only uses samples in which both mOTUs are detected (pairwise-complete observations).
+Converts correlations into Fisher z-scores.
+Weights correlations according to the number of samples in which both mOTUs are present.
+Requires at least 30 jointly detected samples by default.
+"""
 
 def abundance_z(counts, env, stratify=True, min_n=30, block=500):
     """Association z-score from how mOTU abundances co-vary across samples
@@ -122,6 +154,12 @@ def abundance_z(counts, env, stratify=True, min_n=30, block=500):
     np.fill_diagonal(z, 0)
     return z.astype(np.float32)
 
+"""
+Combines the abundance correlations calculated in the previous step into an association z-score matrix.
+Can calculate associations globally or separately within each environment.
+Stratification helps prevent correlations caused simply by shared environmental preferences.
+Produces a matrix describing positive and negative abundance associations between mOTUs.
+"""
 
 def bh_mask(z, fdr):
     """Benjamini-Hochberg on the upper triangle (two-sided). Returns boolean
@@ -140,6 +178,12 @@ def bh_mask(z, fdr):
     S[iu] = sig
     return S | S.T
 
+"""
+Applies the Benjamini-Hochberg false discovery rate (FDR) correction.
+Accounts for the large number of pairwise comparisons being performed.
+Identifies statistically significant associations using the selected FDR threshold (default = 0.01).
+Returns a matrix indicating which associations are significant.
+"""
 
 def build_graph(z, motus, sig, knn=None, sign=+1):
     """Network of significant edges of one sign. Optionally keep, per node,
@@ -156,7 +200,16 @@ def build_graph(z, motus, sig, knn=None, sign=+1):
     G = nx.relabel_nodes(G, dict(enumerate(motus)))
     G.remove_nodes_from(list(nx.isolates(G)))
     return G
-
+"""
+Converts significant associations into networks.
+Each node represents one mOTU.
+Each edge represents a significant association between two mOTUs.
+Edge weights represent association strength (absolute z-score).
+Creates separate positive and negative networks:
+- Positive network = mOTUs that occur together more than expected or have positively correlated abundances.
+- Negative network = mOTUs that occur together less than expected or have negatively correlated abundances.
+Optionally limits connections to the 50 strongest neighbours per mOTU (knn=50) to reduce network complexity.
+"""
 
 def cluster(G, resolution=1.0, seed=0):
     comms = nx.community.louvain_communities(G, weight="weight",
@@ -164,6 +217,12 @@ def cluster(G, resolution=1.0, seed=0):
     comms = sorted(comms, key=len, reverse=True)
     return {m: i for i, c in enumerate(comms) for m in c}
 
+"""
+Applies the Louvain community detection algorithm to identify groups of strongly connected mOTUs.
+Groups microorganisms that have relatively strong connections within the same cluster.
+Clusters positive and negative networks separately.
+Allows the clustering resolution to be adjusted to obtain larger or smaller clusters.
+"""
 
 def env_affinity(pa, env):
     """Fraction of each mOTU's detections falling in each environment, and
@@ -172,6 +231,11 @@ def env_affinity(pa, env):
     aff = prev.div(prev.sum(axis=1), axis=0)               # normalised profile
     return prev, aff
 
+"""
+- Calculates the prevalence of each mOTU within each environment (proportion of samples in which it is detected).
+- Calculates environmental affinity by normalising prevalence across environments.
+- Identifies which environments are most strongly associated with each mOTU
+"""
 
 def annotate(labels, pa, tax, env, rank="phylum"):
     prev, aff = env_affinity(pa, env)
@@ -199,6 +263,16 @@ def annotate(labels, pa, tax, env, rank="phylum"):
                      f"top_{rank}": top_tax.index[0] if len(top_tax) else None,
                      f"top_{rank}_frac": top_tax.iloc[0] if len(top_tax) else np.nan})
     return df, pd.DataFrame(summ)
+
+"""
+Combines cluster assignments with environmental and taxonomic information.
+Extracts the taxonomic classification of each mOTU (default = phylum).
+Calculates the number of mOTUs in each cluster.
+Identifies the dominant environmental affinity of each cluster.
+Calculates environmental purity (average affinity towards the dominant environment).
+Identifies the most common phylum and its proportion within each cluster.
+Produces individual mOTU annotations and a cluster summary table.
+"""
 
 
 def run_network_analysis(tag, z, pa, tax, env, a):
@@ -230,7 +304,12 @@ def run_network_analysis(tag, z, pa, tax, env, a):
     pd.DataFrame({"a": pa.index[iu[0]], "b": pa.index[iu[1]], "z": z[iu]}
                  ).to_csv(f"{a.out}/edges_{tag}.tsv.gz", sep="\t", index=False)
     return result
-
+"""
+Brings together the statistical testing, network construction, clustering and annotation steps.
+Runs the analysis separately for positive and negative associations.
+Saves the resulting networks' significant edges, cluster assignments and cluster summaries.
+Reports the number of significant associations, nodes, edges and clusters.
+"""
 
 def main(argv=None):
     ap = argparse.ArgumentParser()
@@ -286,7 +365,26 @@ def main(argv=None):
     cmp.to_csv(f"{a.out}/cluster_comparison.tsv", sep="\t")
     print(f"saved run_summary.tsv and cluster_comparison.tsv in {a.out}")
 
+"""
+Defines the analysis parameters (FDR, k-nearest neighbours, clustering resolution, etc.).
+Loads and aligns all datasets.
+Runs the analyses globally and stratified by environment.
+Performs three types of analysis:
+- Presence/absence: based on co-occurrence patterns.
+- Abundance: based on correlations in CLR-transformed read counts.
+- Combined: combines presence/absence and abundance association z-scores using Stouffer's method.
+Saves a summary comparing the different analyses.
+Saves a cluster comparison table showing cluster assignments across analyses, together with environmental affinity.
+"""
 
 # Do not auto-run inside Jupyter/IPython (sys.argv there is the kernel's, not yours)
 if __name__ == "__main__" and "ipykernel" not in sys.modules:
     main()
+
+"""
+run_summary.tsv	==== Summary of significant associations, network sizes and number of clusters for each analysis.
+cluster_comparison.tsv	==== Compares mOTU cluster assignments across all analyses and includes environmental affinities.
+edges_*.tsv.gz	==== Significant pairwise associations and their z-scores.
+clusters_*.tsv	==== Individual mOTU cluster assignments with environmental and taxonomic annotations.
+cluster_summary_*.tsv	==== Summary of each cluster, including size, dominant environment and dominant phylum.
+"""
