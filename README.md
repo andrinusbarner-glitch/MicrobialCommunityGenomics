@@ -1,56 +1,49 @@
-# BC2026 — mOTUs working dataset
+# P3 co-occurrence: streamlined pipeline
 
-Derived from `~/Desktop/Github/Data/mOTUsMatrix/` and `~/Desktop/Github/mOTUs_tree/`,
-filtered and preprocessed for the 2026 Block Course projects. **All matrices are gzipped TSV** — load with `pd.read_csv(path, sep="\t", index_col=0)`.
-
-## Files
-
-### Working subset — 10,183 mOTUs × 13,310 samples
-Filter: mOTUs detected in ≥500 samples, samples containing ≥500 mOTUs, and samples belonging to one of four broad environmental groups (see below).
-
-- **`motus_subset_matrix.tsv.gz`** (11 MB) — Dense read-count matrix (int32).
-- **`motus_subset_pa.tsv.gz`** (4 MB) — Dense presence/absence matrix (int8). Start here for most analyses.
-- **`motus_subset_motu_index.tsv`** / **`motus_subset_sample_index.tsv`** — Row / column IDs.
-- **`motus_subset_taxonomy.tsv`** — GTDB taxonomy for the 10,183 filtered mOTUs.
-- **`motus_subset_environment.tsv`** — Two columns: `sample_id`, `environment`. Values:
-
-  | environment | n samples |
-  |---|---|
-  | Saline | 4,334 |
-  | Animal-associated | 3,715 |
-  | Human-associated | 3,444 |
-  | Non-saline | 1,817 |
-
-### Phylogeny (P2, P3, P4)
-- **`mOTUs_tree_bacteria.nwk`** — FastTree bacterial phylogeny from concatenated single-copy markers.
-
-### Function (P4)
-- **`motus_subset_cog_matrix.tsv.gz`** (2 MB) — COG-count matrix (int16) for the 2,094 mOTUs whose representative genome maps to a GTDB reference. Rows = mOTU, columns = 4,789 COGs. *Taxonomically biased — isolates only.*
-- **`cog_annotations.tsv`** — COG → functional category + gene name + pathway.
-
-## Which files per project
-
-| Project | Needs |
-|---|---|
-| **P1** Specialists vs generalists | `motus_subset_pa.tsv.gz` · `motus_subset_taxonomy.tsv` · `motus_subset_environment.tsv` |
-| **P2** Phylogenetic signal | `motus_subset_pa.tsv.gz` · `motus_subset_taxonomy.tsv` · `motus_subset_environment.tsv` · `mOTUs_tree_bacteria.nwk` |
-| **P3** Co-occurrence | `motus_subset_pa.tsv.gz` · `motus_subset_taxonomy.tsv` · `motus_subset_environment.tsv` · `mOTUs_tree_bacteria.nwk` |
-| **P4** Streamlining | `motus_subset_cog_matrix.tsv.gz` · `cog_annotations.tsv` · `motus_subset_taxonomy.tsv` · `motus_subset_environment.tsv` · `mOTUs_tree_bacteria.nwk` |
-
-## Loading examples
-
-```python
-import pandas as pd
-
-pa   = pd.read_csv("motus_subset_pa.tsv.gz",             sep="\t", index_col=0)
-tax  = pd.read_csv("motus_subset_taxonomy.tsv",          sep="\t")
-env  = pd.read_csv("motus_subset_environment.tsv",       sep="\t")
-cog  = pd.read_csv("motus_subset_cog_matrix.tsv.gz",     sep="\t", index_col=0)
+```
+P3_streamlined/
+  data/              raw input (extracted from "Raw Data.tar")
+  p3_pipeline.py     statistics, networks, clusters -> results/
+  p3_viz.py          figure functions; only reads results/
+  make_figures.py    writes all figures to results/figures/
+  results/           output of the run (see below)
 ```
 
-## Filter rationale
-The raw atlas is 117k × 112k with median mOTU prevalence 40 and median sample richness 158 — the vast majority is sparse, rare mOTUs. Filtering to `prev ≥ 500`, `richness ≥ 500`, and one of the four well-populated L2 environments yields a subset that:
+Run:
 
-- fits comfortably in pandas,
-- retains the ecologically well-supported core of the atlas,
-- covers four biologically meaningful, well-populated environmental groups (marine, freshwater, animal, human) for cross-biome comparisons.
+```bash
+python p3_pipeline.py
+```
+
+```bash
+python make_figures.py
+```
+
+On the course server, pass the masterdata folder: `python p3_pipeline.py --data /nfs/.../motus_small_sample/`.
+
+## What changed compared with `cooccurrence_clusters_abundance.py`
+
+| Before | Now | Why |
+|---|---|---|
+| All 10,183 mOTUs | mOTUs with ≥ 50 detections **in this subset** (`--min-prev`) | Some mOTUs occur in only 1–5 of these samples; they gave z ≈ 100 and a 378-mOTU fake cluster |
+| Strata = environment | Main model strata = environment × within-environment **richness quartile** (16 strata) | Rich/deep samples detect many mOTUs at once, which creates positive co-occurrence that is not biology |
+| 6 analyses (PA/abundance/combined × global/stratified) | 3 PA models: `global` (baseline), `env`, `env_rich` (main) | Combined ≈ PA; abundance global ≈ stratified |
+| Edge weight = \|z\| | Significance from z (BH-FDR); weight = effect size r, edges need r ≥ `--min-r` | z grows with sample size; r does not |
+| Positive and negative networks clustered | Positive network only; negative edges are counted | Clustering mutual-avoidance edges has no meaning |
+| `top_phylum` always NaN | Taxonomy read from the plain rank columns | Bug fix |
+| Viz re-ran Louvain | Viz reads the pipeline's cluster labels | Figures and tables now agree |
+| Full significant edge lists (35–40M rows) | Network edges + summary statistics | Only these were used |
+
+Effect size r: the correlation of two mOTUs' 0/1 vectors after centring each vector within each stratum (pooled phi coefficient).
+For the global model, z = r·√(N−1) exactly.
+
+## Results files
+
+- `run_summary.tsv`: per model: z threshold, significant +/− pairs, network size, clusters, modularity (Louvain vs environment-only partition), AMI with environment, degree–prevalence correlation, Louvain seed stability (main model).
+- `edge_fate.tsv`: what happens to significant pairs going global → env → env_rich (kept / lost / flipped / new; how many lost pairs are within one environment).
+- `motus.tsv`: one row per mOTU: prevalence, filter flag, habitat profile, taxonomy, cluster and degree in each model.
+- `samples.tsv`: environment, richness, read depth and stratum for every sample.
+- `clusters_<model>.tsv`: one row per cluster: size, environment profile, top phylum/family/genus, median prevalence.
+- `network_edges_<model>.tsv.gz`: the clustered network (a, b, r, z).
+- `envpair_density_<model>_<pos|neg>.tsv`: share of possible pairs between two environments that are significant.
+- `effect_size_hist.tsv`, `diagnostics.json`, `run_log.txt`.
