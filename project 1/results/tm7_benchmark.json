@@ -1,0 +1,176 @@
+{
+ "definitions": {
+  "version": "v1 (frozen 2026-11-10)",
+  "query": "kept mOTUs of class Saccharimonadia",
+  "candidates": "kept mOTUs, not Patescibacteria, not the query's own phylum",
+  "score": "pooled phi r of the null model (p3_pipeline.NullModel definition)",
+  "models": [
+   "global",
+   "env",
+   "env_rich",
+   "env_study_rich",
+   "hab_study_rich"
+  ],
+  "tier1_phylum": [
+   "Actinomycetota"
+  ],
+  "tier2_families": [
+   "Actinomycetaceae",
+   "Propionibacteriaceae"
+  ],
+  "tier3_genera": [
+   "Pauljensenia",
+   "Actinomyces",
+   "Arachnia",
+   "Gordonia"
+  ],
+  "controls": "same dom_env, not Patescibacteria, not Actinomycetota, |log2 prevalence ratio| <= 0.5, 25 nearest in prevalence",
+  "n_controls_per_query": 25,
+  "max_log2_prev_ratio": 0.5,
+  "n_draws": 5000,
+  "seed": 1,
+  "metrics": {
+   "top1_tier1": "share of queries whose top partner is tier 1 (higher = better)",
+   "top5_tier1": "mean share of tier 1 among the top 5 partners (higher = better)",
+   "best_rank_tier2": "median percentile rank of the best tier 2 partner (lower = better)",
+   "best_rank_tier3": "median percentile rank of the best tier 3 partner (lower = better)",
+   "top10_tier3": "share of queries with a tier 3 genus among the top 10 partners (higher = better)"
+  }
+ },
+ "definitions_hash": "e16d01a3d854",
+ "n_tm7": 41,
+ "controls_per_tm7_median": 25,
+ "headline": {
+  "global | top1_tier1": {
+   "tm7": 0.07317,
+   "control_mean": 0.09115,
+   "p": 0.73945
+  },
+  "global | top5_tier1": {
+   "tm7": 0.04878,
+   "control_mean": 0.09016,
+   "p": 0.93721
+  },
+  "global | best_rank_tier2": {
+   "tm7": 0.00313,
+   "control_mean": 0.00704,
+   "p": 0.0002
+  },
+  "global | best_rank_tier3": {
+   "tm7": 0.00354,
+   "control_mean": 0.00986,
+   "p": 0.0002
+  },
+  "global | top10_tier3": {
+   "tm7": 0.14634,
+   "control_mean": 0.08035,
+   "p": 0.09398
+  },
+  "env | top1_tier1": {
+   "tm7": 0.09756,
+   "control_mean": 0.09399,
+   "p": 0.55629
+  },
+  "env | top5_tier1": {
+   "tm7": 0.07317,
+   "control_mean": 0.09402,
+   "p": 0.76425
+  },
+  "env | best_rank_tier2": {
+   "tm7": 0.00334,
+   "control_mean": 0.00775,
+   "p": 0.0002
+  },
+  "env | best_rank_tier3": {
+   "tm7": 0.00375,
+   "control_mean": 0.0106,
+   "p": 0.0002
+  },
+  "env | top10_tier3": {
+   "tm7": 0.14634,
+   "control_mean": 0.08708,
+   "p": 0.12777
+  },
+  "env_rich | top1_tier1": {
+   "tm7": 0.17073,
+   "control_mean": 0.11152,
+   "p": 0.15937
+  },
+  "env_rich | top5_tier1": {
+   "tm7": 0.12195,
+   "control_mean": 0.11412,
+   "p": 0.41752
+  },
+  "env_rich | best_rank_tier2": {
+   "tm7": 0.00313,
+   "control_mean": 0.00788,
+   "p": 0.0002
+  },
+  "env_rich | best_rank_tier3": {
+   "tm7": 0.00417,
+   "control_mean": 0.01315,
+   "p": 0.0002
+  },
+  "env_rich | top10_tier3": {
+   "tm7": 0.21951,
+   "control_mean": 0.09135,
+   "p": 0.007
+  },
+  "env_study_rich | top1_tier1": {
+   "tm7": 0.26829,
+   "control_mean": 0.11294,
+   "p": 0.0026
+  },
+  "env_study_rich | top5_tier1": {
+   "tm7": 0.19512,
+   "control_mean": 0.11861,
+   "p": 0.0134
+  },
+  "env_study_rich | best_rank_tier2": {
+   "tm7": 0.00177,
+   "control_mean": 0.00576,
+   "p": 0.0002
+  },
+  "env_study_rich | best_rank_tier3": {
+   "tm7": 0.00219,
+   "control_mean": 0.00956,
+   "p": 0.0002
+  },
+  "env_study_rich | top10_tier3": {
+   "tm7": 0.34146,
+   "control_mean": 0.11032,
+   "p": 0.0002
+  },
+  "hab_study_rich | top1_tier1": {
+   "tm7": 0.31707,
+   "control_mean": 0.10448,
+   "p": 0.0002
+  },
+  "hab_study_rich | top5_tier1": {
+   "tm7": 0.21951,
+   "control_mean": 0.11522,
+   "p": 0.001
+  },
+  "hab_study_rich | best_rank_tier2": {
+   "tm7": 0.00083,
+   "control_mean": 0.0043,
+   "p": 0.0002
+  },
+  "hab_study_rich | best_rank_tier3": {
+   "tm7": 0.00094,
+   "control_mean": 0.00741,
+   "p": 0.0002
+  },
+  "hab_study_rich | top10_tier3": {
+   "tm7": 0.5122,
+   "control_mean": 0.14837,
+   "p": 0.0002
+  },
+  "hab_study_rich minus global | top1_tier1": {
+   "tm7": 0.2439,
+   "control_mean": 0.01333,
+   "p": 0.0002
+  }
+ },
+ "runtime_min": 0.8804080486297607
+}

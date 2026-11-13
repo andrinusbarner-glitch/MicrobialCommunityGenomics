@@ -1,0 +1,31 @@
+variant	group	n_tm7	metric	tm7	control_mean	control_lo	control_hi	p
+unadjusted	all TM7	41	top1_tier1	0.3171	0.135	0.04878	0.2439	0.0014
+unadjusted	all TM7	41	top5_tier1	0.2634	0.1514	0.08293	0.2244	0.0014
+unadjusted	all TM7	41	best_rank_tier2	0.001147	0.003905	0.002052	0.006727	0.0002
+unadjusted	all TM7	41	best_rank_tier3	0.001981	0.00677	0.0034	0.01131	0.0003999
+unadjusted	all TM7	41	top10_tier3	0.3659	0.2056	0.09756	0.3171	0.008598
+unadjusted	Human-associated	20	top1_tier1	0.1	0.1278	0	0.3	0.751
+unadjusted	Human-associated	20	top5_tier1	0.13	0.1561	0.06	0.26	0.7007
+unadjusted	Human-associated	20	best_rank_tier2	0.001981	0.003416	0.001116	0.007928	0.1852
+unadjusted	Human-associated	20	best_rank_tier3	0.001981	0.004066	0.00136	0.009067	0.1056
+unadjusted	Human-associated	20	top10_tier3	0.3	0.3038	0.1	0.5	0.5995
+unadjusted	Non-saline	19	top1_tier1	0.5263	0.1464	0	0.3158	0.0002
+unadjusted	Non-saline	19	top5_tier1	0.4105	0.154	0.05263	0.2737	0.0002
+unadjusted	Non-saline	19	best_rank_tier2	0.0003128	0.00398	0.001773	0.008278	0.0002
+unadjusted	Non-saline	19	best_rank_tier3	0.001251	0.009807	0.003986	0.02077	0.0002
+unadjusted	Non-saline	19	top10_tier3	0.4737	0.1239	0	0.2632	0.0002
+adjusted	all TM7	41	top1_tier1	0.3415	0.1538	0.04878	0.2683	0.002799
+adjusted	all TM7	41	top5_tier1	0.2976	0.1631	0.09756	0.2341	0.0007998
+adjusted	all TM7	41	best_rank_tier2	0.0007298	0.002875	0.001533	0.004752	0.0002
+adjusted	all TM7	41	best_rank_tier3	0.001355	0.005039	0.002606	0.009198	0.0002
+adjusted	all TM7	41	top10_tier3	0.4146	0.2559	0.1463	0.3902	0.0126
+adjusted	Human-associated	20	top1_tier1	0.15	0.1709	0.05	0.35	0.6929
+adjusted	Human-associated	20	top5_tier1	0.14	0.1838	0.09	0.29	0.8318
+adjusted	Human-associated	20	best_rank_tier2	0.001095	0.002198	0.0008424	0.004294	0.08478
+adjusted	Human-associated	20	best_rank_tier3	0.001095	0.002531	0.0009608	0.005112	0.04719
+adjusted	Human-associated	20	top10_tier3	0.5	0.3892	0.2	0.6	0.2146
+adjusted	Non-saline	19	top1_tier1	0.5789	0.1372	0	0.3158	0.0002
+adjusted	Non-saline	19	top5_tier1	0.4842	0.1494	0.05263	0.2632	0.0002
+adjusted	Non-saline	19	best_rank_tier2	0.0003128	0.003436	0.001533	0.006803	0.0002
+adjusted	Non-saline	19	best_rank_tier3	0.001355	0.009179	0.003679	0.01775	0.0002
+adjusted	Non-saline	19	top10_tier3	0.3684	0.1405	0	0.3158	0.009198

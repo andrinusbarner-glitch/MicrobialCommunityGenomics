@@ -1,0 +1,17 @@
+pair	group	medium	pair_usable	mip	mip_ctrl_n	mip_ctrl_mean	mip_ctrl_min	mip_ctrl_max	mip_testable	mip_above_all_ctrl	mro	mro_ctrl_n	mro_ctrl_mean	mro_ctrl_min	mro_ctrl_max	mro_testable	mro_above_all_ctrl
+Methanobrevibacter_A smithii+SFEL01 sp004557245	H2	minimal	True	2.000	3	3.667	1.000	5.000	True	False	0.486	3	0.583	0.462	0.800	True	False
+Nanosynbacter sp002421965+Leucobacter sp002336855	TM7	minimal	True	5.000	3	3.667	2.000	6.000	True	False	0.455	3	0.615	0.455	0.712	True	False
+Unknown CALMAK01+Scrofimicrobium sp014069575	TM7	minimal	True	3.000	2	3.500	1.000	6.000	True	False	0.571	3	0.633	0.558	0.778	True	False
+Unknown T78+Methanothrix soehngenii	methanogen	minimal	True	5.000	3	2.000	1.000	3.000	True	True	0.651	3	0.643	0.571	0.692	True	False
+Lawsonella clevelandensis_A+Cutibacterium acnes	one-way	minimal	True	0.000	2	3.000	2.000	4.000	True	False	0.857	3	0.628	0.564	0.741	True	True
+Turicibacter sanguinis+Romboutsia timonensis	one-way	minimal	True	1.000	2	3.000	3.000	3.000	True	False		3	0.675	0.615	0.756	False	False
+Anaerostipes amylophilus+Bifidobacterium adolescentis	positive control	minimal	True	2.000	3	1.333	1.000	2.000	True	False	0.741	3	0.724	0.667	0.786	True	False
+Prevotella sp900316645+Succiniclasticum sp900315925	succinate	minimal	True		3	3.000	0.000	7.000	False	False	0.621	3	0.722	0.611	0.846	True	False
+Methanobrevibacter_A smithii+SFEL01 sp004557245	H2	M9[-O2]	False		0				False	False		0				False	False
+Nanosynbacter sp002421965+Leucobacter sp002336855	TM7	M9[-O2]	False		0				False	False		0				False	False
+Unknown CALMAK01+Scrofimicrobium sp014069575	TM7	M9[-O2]	False		0				False	False		0				False	False
+Unknown T78+Methanothrix soehngenii	methanogen	M9[-O2]	False		0				False	False		0				False	False
+Lawsonella clevelandensis_A+Cutibacterium acnes	one-way	M9[-O2]	False		0				False	False		0				False	False
+Turicibacter sanguinis+Romboutsia timonensis	one-way	M9[-O2]	False		0				False	False		0				False	False
+Anaerostipes amylophilus+Bifidobacterium adolescentis	positive control	M9[-O2]	False		0				False	False		0				False	False
+Prevotella sp900316645+Succiniclasticum sp900315925	succinate	M9[-O2]	False		0				False	False		0				False	False

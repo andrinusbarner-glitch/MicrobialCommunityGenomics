@@ -1,0 +1,37 @@
+group	variant	pairs	mean_jaccard	frac_in_80pct_reps	n_union	n_consensus
+marine	uncontrolled	positive	0.9059	0.8286	3216527	2855234
+marine	uncontrolled	negative |r|>=min_r	0.8218	0.6926	2240879	1780671
+marine	uncontrolled	network edge	0.5784	0.3476	262029	134246
+marine	controlled	positive	0.7701	0.609	2022910	1481091
+marine	controlled	negative |r|>=min_r	0.6743	0.4742	1881713	1187554
+marine	controlled	network edge	0.5321	0.2937	278231	127471
+human gut	uncontrolled	positive	0.7506	0.5708	1046169	727577
+human gut	uncontrolled	negative |r|>=min_r	0.7667	0.589	707828	498647
+human gut	uncontrolled	network edge	0.4792	0.2338	258147	99212
+human gut	controlled	positive	0.5838	0.347	566713	283816
+human gut	controlled	negative |r|>=min_r	0.5995	0.3628	369666	188798
+human gut	controlled	network edge	0.4107	0.1718	259163	81928
+pig gut	uncontrolled	positive	0.9097	0.834	1141901	1016824
+pig gut	uncontrolled	negative |r|>=min_r	0.834	0.7024	393194	312095
+pig gut	uncontrolled	network edge	0.6821	0.4734	141133	86963
+pig gut	controlled	positive	0.7802	0.6179	563916	413960
+pig gut	controlled	negative |r|>=min_r	0.7656	0.5966	418014	300263
+pig gut	controlled	network edge	0.5757	0.3396	157138	78682
+bovine gut	uncontrolled	positive	0.8519	0.7417	203378	168167
+bovine gut	uncontrolled	negative |r|>=min_r	0.8458	0.721	97451	79218
+bovine gut	uncontrolled	network edge	0.7121	0.5159	49892	32566
+bovine gut	controlled	positive	0.7942	0.6297	140981	104747
+bovine gut	controlled	negative |r|>=min_r	0.8362	0.7056	133847	107740
+bovine gut	controlled	network edge	0.6576	0.4381	52401	30945
+human oral	uncontrolled	positive	0.8519	0.7346	150966	123895
+human oral	uncontrolled	negative |r|>=min_r	0.7764	0.6107	75444	54918
+human oral	uncontrolled	network edge	0.7626	0.587	49328	35016
+human oral	controlled	positive	0.7947	0.6381	87908	65755
+human oral	controlled	negative |r|>=min_r	0.7022	0.5099	79645	52177
+human oral	controlled	network edge	0.733	0.5459	48523	32643
+wastewater	uncontrolled	positive	0.9159	0.8482	1628703	1466971
+wastewater	uncontrolled	negative |r|>=min_r	0.8064	0.6558	82238	62531
+wastewater	uncontrolled	network edge	0.7504	0.5745	129478	90747
+wastewater	controlled	positive	0.8317	0.7023	539151	432309
+wastewater	controlled	negative |r|>=min_r	0.8139	0.6694	324583	251123
+wastewater	controlled	network edge	0.7326	0.5468	127243	86508
