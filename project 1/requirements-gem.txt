@@ -1,0 +1,9 @@
+# Metabolic-model pilot (separate environment, Python 3.13.7). Versions used for the report.
+# DIAMOND 2.2.8 must be on the PATH (or passed to gem_build.py with --diamond); it is not a pip package.
+carveme==1.6.6
+smetana==1.2.1
+reframed==1.6.0
+cobra==0.32.1
+PySCIPOpt==6.3.0
+pandas==2.3.3
+numpy==2.5.4

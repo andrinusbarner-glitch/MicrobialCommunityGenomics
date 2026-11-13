@@ -1,0 +1,17 @@
+community	medium	size	mip	mro
+pair|H2|Methanobrevibacter_A smithii+SFEL01 sp004557245	complete	2	2	0.4864864864864865
+pair|TM7|Nanosynbacter sp002421965+Leucobacter sp002336855	complete	2	5	0.45454545454545453
+pair|TM7|Unknown CALMAK01+Scrofimicrobium sp014069575	complete	2	3	0.5714285714285714
+pair|methanogen|Unknown T78+Methanothrix soehngenii	complete	2	5	0.6511627906976745
+pair|one-way|Lawsonella clevelandensis_A+Cutibacterium acnes	complete	2	0	0.8571428571428571
+pair|one-way|Turicibacter sanguinis+Romboutsia timonensis	complete	2	1	n/a
+pair|positive control|Anaerostipes amylophilus+Bifidobacterium adolescentis	complete	2	2	0.7407407407407407
+pair|succinate|Prevotella sp900316645+Succiniclasticum sp900315925	complete	2	n/a	0.6206896551724138
+random|H2|Methanobrevibacter_A smithii+random	complete	6	7	0.5593869731800766
+random|TM7|Nanosynbacter sp002421965+random	complete	6	9	0.6116838487972509
+random|TM7|Unknown CALMAK01+random	complete	6	n/a	0.6031746031746031
+random|methanogen|Unknown T78+random	complete	6	7	0.7131782945736435
+random|one-way|Lawsonella clevelandensis_A+random	complete	6	n/a	0.5991561181434599
+random|one-way|Turicibacter sanguinis+random	complete	6	n/a	0.6360153256704981
+random|positive control|Anaerostipes amylophilus+random	complete	6	2	0.7005649717514125
+random|succinate|Prevotella sp900316645+random	complete	6	7	0.6256410256410256

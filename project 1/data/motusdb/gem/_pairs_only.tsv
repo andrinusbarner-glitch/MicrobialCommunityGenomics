@@ -1,0 +1,16 @@
+pair|positive control|Anaerostipes amylophilus+Bifidobacterium adolescentis	RSGB23-1_GCF-024125185-V1_GENO_10000001
+pair|positive control|Anaerostipes amylophilus+Bifidobacterium adolescentis	RSGB23-1_GCF-017815835-V1_GENO_10000001
+pair|one-way|Turicibacter sanguinis+Romboutsia timonensis	RSGB23-1_GCF-013046825-V1_GENO_10000001
+pair|one-way|Turicibacter sanguinis+Romboutsia timonensis	RSGB23-1_GCF-900106845-V1_GENO_10000001
+pair|one-way|Lawsonella clevelandensis_A+Cutibacterium acnes	DANK21-1_haib18CEM5453_HNHKFCCXY_SL345964_MAG_00000006
+pair|one-way|Lawsonella clevelandensis_A+Cutibacterium acnes	RSGB23-1_GCF-020181495-V1_GENO_10000001
+pair|succinate|Prevotella sp900316645+Succiniclasticum sp900315925	LIJU20-1_SAMEA104395225-S002_MAG_00000034
+pair|succinate|Prevotella sp900316645+Succiniclasticum sp900315925	RSGB23-1_GCF-900101645-V1_GENO_10000001
+pair|TM7|Unknown CALMAK01+Scrofimicrobium sp014069575	MUNK22-1_SAMEA7428247_MAG_00000037
+pair|TM7|Unknown CALMAK01+Scrofimicrobium sp014069575	RSGB23-1_GCF-014069575-V1_GENO_10000001
+pair|TM7|Nanosynbacter sp002421965+Leucobacter sp002336855	MUNK22-1_SAMEA7426367_MAG_00000051
+pair|TM7|Nanosynbacter sp002421965+Leucobacter sp002336855	MUNK22-1_SAMEA4777426_MAG_00000041
+pair|H2|Methanobrevibacter_A smithii+SFEL01 sp004557245	RSGB23-1_GCF-000016525-V1_GENO_10000001
+pair|H2|Methanobrevibacter_A smithii+SFEL01 sp004557245	WIRB19-1_SAMEA4817948_MAG_00000103
+pair|methanogen|Unknown T78+Methanothrix soehngenii	MUNK22-1_SAMEA13189762_MAG_00000072
+pair|methanogen|Unknown T78+Methanothrix soehngenii	RSGB23-1_GCF-000204415-V1_GENO_10000001

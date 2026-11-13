@@ -1,0 +1,48 @@
+random|positive control|Anaerostipes amylophilus+random1	RSGB23-1_GCF-024125185-V1_GENO_10000001
+random|positive control|Anaerostipes amylophilus+random1	MUNK22-1_SAMEA4777426_MAG_00000041
+random|positive control|Anaerostipes amylophilus+random2	RSGB23-1_GCF-024125185-V1_GENO_10000001
+random|positive control|Anaerostipes amylophilus+random2	RSGB23-1_GCF-014069575-V1_GENO_10000001
+random|positive control|Anaerostipes amylophilus+random3	RSGB23-1_GCF-024125185-V1_GENO_10000001
+random|positive control|Anaerostipes amylophilus+random3	RSGB23-1_GCF-000204415-V1_GENO_10000001
+random|one-way|Turicibacter sanguinis+random1	RSGB23-1_GCF-013046825-V1_GENO_10000001
+random|one-way|Turicibacter sanguinis+random1	WIRB19-1_SAMEA4817948_MAG_00000103
+random|one-way|Turicibacter sanguinis+random2	RSGB23-1_GCF-013046825-V1_GENO_10000001
+random|one-way|Turicibacter sanguinis+random2	MUNK22-1_SAMEA7428247_MAG_00000037
+random|one-way|Turicibacter sanguinis+random3	RSGB23-1_GCF-013046825-V1_GENO_10000001
+random|one-way|Turicibacter sanguinis+random3	RSGB23-1_GCF-900101645-V1_GENO_10000001
+random|one-way|Lawsonella clevelandensis_A+random1	DANK21-1_haib18CEM5453_HNHKFCCXY_SL345964_MAG_00000006
+random|one-way|Lawsonella clevelandensis_A+random1	RSGB23-1_GCF-900101645-V1_GENO_10000001
+random|one-way|Lawsonella clevelandensis_A+random2	DANK21-1_haib18CEM5453_HNHKFCCXY_SL345964_MAG_00000006
+random|one-way|Lawsonella clevelandensis_A+random2	RSGB23-1_GCF-900106845-V1_GENO_10000001
+random|one-way|Lawsonella clevelandensis_A+random3	DANK21-1_haib18CEM5453_HNHKFCCXY_SL345964_MAG_00000006
+random|one-way|Lawsonella clevelandensis_A+random3	WIRB19-1_SAMEA4817948_MAG_00000103
+random|succinate|Prevotella sp900316645+random1	LIJU20-1_SAMEA104395225-S002_MAG_00000034
+random|succinate|Prevotella sp900316645+random1	WIRB19-1_SAMEA4817948_MAG_00000103
+random|succinate|Prevotella sp900316645+random2	LIJU20-1_SAMEA104395225-S002_MAG_00000034
+random|succinate|Prevotella sp900316645+random2	RSGB23-1_GCF-014069575-V1_GENO_10000001
+random|succinate|Prevotella sp900316645+random3	LIJU20-1_SAMEA104395225-S002_MAG_00000034
+random|succinate|Prevotella sp900316645+random3	RSGB23-1_GCF-024125185-V1_GENO_10000001
+random|TM7|Unknown CALMAK01+random1	MUNK22-1_SAMEA7428247_MAG_00000037
+random|TM7|Unknown CALMAK01+random1	RSGB23-1_GCF-900101645-V1_GENO_10000001
+random|TM7|Unknown CALMAK01+random2	MUNK22-1_SAMEA7428247_MAG_00000037
+random|TM7|Unknown CALMAK01+random2	LIJU20-1_SAMEA104395225-S002_MAG_00000034
+random|TM7|Unknown CALMAK01+random3	MUNK22-1_SAMEA7428247_MAG_00000037
+random|TM7|Unknown CALMAK01+random3	MUNK22-1_SAMEA13189762_MAG_00000072
+random|TM7|Nanosynbacter sp002421965+random1	MUNK22-1_SAMEA7426367_MAG_00000051
+random|TM7|Nanosynbacter sp002421965+random1	RSGB23-1_GCF-024125185-V1_GENO_10000001
+random|TM7|Nanosynbacter sp002421965+random2	MUNK22-1_SAMEA7426367_MAG_00000051
+random|TM7|Nanosynbacter sp002421965+random2	MUNK22-1_SAMEA13189762_MAG_00000072
+random|TM7|Nanosynbacter sp002421965+random3	MUNK22-1_SAMEA7426367_MAG_00000051
+random|TM7|Nanosynbacter sp002421965+random3	RSGB23-1_GCF-900106845-V1_GENO_10000001
+random|H2|Methanobrevibacter_A smithii+random1	RSGB23-1_GCF-000016525-V1_GENO_10000001
+random|H2|Methanobrevibacter_A smithii+random1	RSGB23-1_GCF-900106845-V1_GENO_10000001
+random|H2|Methanobrevibacter_A smithii+random2	RSGB23-1_GCF-000016525-V1_GENO_10000001
+random|H2|Methanobrevibacter_A smithii+random2	MUNK22-1_SAMEA4777426_MAG_00000041
+random|H2|Methanobrevibacter_A smithii+random3	RSGB23-1_GCF-000016525-V1_GENO_10000001
+random|H2|Methanobrevibacter_A smithii+random3	MUNK22-1_SAMEA7426367_MAG_00000051
+random|methanogen|Unknown T78+random1	MUNK22-1_SAMEA13189762_MAG_00000072
+random|methanogen|Unknown T78+random1	WIRB19-1_SAMEA4817948_MAG_00000103
+random|methanogen|Unknown T78+random2	MUNK22-1_SAMEA13189762_MAG_00000072
+random|methanogen|Unknown T78+random2	RSGB23-1_GCF-013046825-V1_GENO_10000001
+random|methanogen|Unknown T78+random3	MUNK22-1_SAMEA13189762_MAG_00000072
+random|methanogen|Unknown T78+random3	RSGB23-1_GCF-014069575-V1_GENO_10000001
