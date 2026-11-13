@@ -1,0 +1,17 @@
+group	variant	pairs	n_pairs	mean_dist	null_config_mean	null_config_sd	ratio_config	ses_config	p_closer	p_farther	random_pairs_mean	ratio_random
+Human-associated	uncontrolled	positive network edges	161501	0.68069	0.79049	0.00031771	0.8611	-345.59	0.005	1	0.79578	0.85538
+Human-associated	uncontrolled	negative pairs (r <= -min_r)	200000	0.83309	0.79562	0.0002916	1.0471	128.5	1	0.005	0.7962	1.0463
+Human-associated	controlled	positive network edges	111280	0.63656	0.7819	0.00040528	0.81412	-358.62	0.005	1	0.79652	0.79917
+Human-associated	controlled	negative pairs (r <= -min_r)	181115	0.73186	0.73461	0.00032668	0.99626	-8.4154	0.005	1	0.7961	0.91931
+Animal-associated	uncontrolled	positive network edges	129286	0.70978	0.76139	0.00039829	0.93222	-129.57	0.005	1	0.76131	0.93232
+Animal-associated	uncontrolled	negative pairs (r <= -min_r)	200000	0.7611	0.75733	0.00030599	1.005	12.308	1	0.005	0.7612	0.99986
+Animal-associated	controlled	positive network edges	92284	0.69607	0.76782	0.00045839	0.90655	-156.54	0.005	1	0.76182	0.91369
+Animal-associated	controlled	negative pairs (r <= -min_r)	200000	0.77638	0.77061	0.00032235	1.0075	17.915	1	0.005	0.76137	1.0197
+Non-saline	uncontrolled	positive network edges	112848	0.71492	0.82421	0.00037111	0.8674	-294.5	0.005	1	0.82428	0.86732
+Non-saline	uncontrolled	negative pairs (r <= -min_r)	131605	0.87259	0.83284	0.00038956	1.0477	102.04	1	0.005	0.82383	1.0592
+Non-saline	controlled	positive network edges	92413	0.70553	0.82243	0.00039806	0.85786	-293.67	0.005	1	0.82407	0.85615
+Non-saline	controlled	negative pairs (r <= -min_r)	200000	0.83278	0.81558	0.00026428	1.0211	65.064	1	0.005	0.82466	1.0098
+Saline	uncontrolled	positive network edges	130277	0.61405	0.76904	0.00045032	0.79846	-344.18	0.005	1	0.77957	0.78767
+Saline	uncontrolled	negative pairs (r <= -min_r)	200000	0.81057	0.79101	0.00031134	1.0247	62.826	1	0.005	0.77879	1.0408
+Saline	controlled	positive network edges	123232	0.61631	0.77601	0.00040694	0.7942	-392.44	0.005	1	0.77909	0.79107
+Saline	controlled	negative pairs (r <= -min_r)	200000	0.7884	0.78045	0.00033819	1.0102	23.517	1	0.005	0.77848	1.0128
