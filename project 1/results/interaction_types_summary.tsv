@@ -1,0 +1,10 @@
+item	pairs	share	random_partner_share
+flag_one_way	4	0.04444	
+flag_mutual	37	0.4111	
+flag_habitat	0	0	
+flag_hump	1	0.01111	
+kegg_H2_syntrophy	0	0	0.004444
+kegg_succinate	9	0.1	0.12
+kegg_B12_to_S	7	0.07778	0.07333
+kegg_B12_to_H	7	0.07778	0.06667
+pairs with a non-MAG genome for S or H	35	0.3889	

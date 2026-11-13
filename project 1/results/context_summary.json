@@ -1,0 +1,16 @@
+{
+ "category": {
+  "median_jaccard_within": 0.28275304478299845,
+  "median_jaccard_between": 0.061614893002539806,
+  "median_context_dependence": 0.24491330400309927,
+  "n_motus": 2464,
+  "rho_breadth_vs_context_dependence": 0.1194539375057251
+ },
+ "sub-habitat": {
+  "median_jaccard_within": 0.36313449911255835,
+  "median_jaccard_between": 0.09821789478428969,
+  "median_context_dependence": 0.2885955301874169,
+  "n_motus": 2172,
+  "rho_breadth_vs_context_dependence": 0.08756183670824827
+ }
+}

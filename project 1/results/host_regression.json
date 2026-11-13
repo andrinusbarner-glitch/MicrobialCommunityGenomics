@@ -1,0 +1,20 @@
+{
+ "settings": {
+  "version": "v1 (2026-11-10)",
+  "min_samples_with_query": 30,
+  "strata": "stratum_hab_study (sub-habitat x study)",
+  "transform": "log2 TSS, zeros -> min/2 per mOTU",
+  "score": "t statistic of log2 TSS(H)",
+  "variants": [
+   "unadjusted",
+   "adjusted"
+  ]
+ },
+ "benchmark_definitions": "v1 (frozen 2026-11-10)",
+ "headline": {
+  "n_tm7_tested": 41,
+  "top1_tier1": 0.34146341463414637,
+  "top1_tier3": 0.07317073170731707
+ },
+ "runtime_min": 10.682640663782756
+}

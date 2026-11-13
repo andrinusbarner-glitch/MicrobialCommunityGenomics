@@ -1,0 +1,28 @@
+{
+ "richness_vs_reads_spearman": {
+  "Animal-associated": 0.7171572459550649,
+  "Human-associated": 0.24809176619794893,
+  "Non-saline": 0.5775549274537558,
+  "Saline": 0.3207894547948731
+ },
+ "richness_by_env_median": {
+  "Animal-associated": 361.0,
+  "Human-associated": 498.0,
+  "Non-saline": 457.0,
+  "Saline": 748.0
+ },
+ "params": {
+  "data": "data",
+  "out": "results",
+  "min_prev": 50,
+  "rich_bins": 4,
+  "min_study": 50,
+  "fdr": 0.01,
+  "min_r": 0.1,
+  "knn": 50,
+  "resolution": 1.0,
+  "seeds": 5,
+  "block": 500
+ },
+ "runtime_min": 4.898100312550863
+}

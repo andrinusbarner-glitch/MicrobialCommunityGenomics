@@ -1,0 +1,7 @@
+fold	set	n	testable_in_validation	share_positive_z_1645	share_validated_bh5	median_z_V
+A	shortlist (D1-D5)	3798	3781	0.9302	0.9299	8.49
+A	D1 only (significant, r >= 0.2)	4782	4756	0.8017	0.7931	5.148
+A	random same-env, different order	19674	19488	0.2017	0.1551	0
+B	shortlist (D1-D5)	3570	3528	0.9351	0.9342	12.89
+B	D1 only (significant, r >= 0.2)	3397	3357	0.9419	0.9413	10.81
+B	random same-env, different order	19771	18565	0.253	0.2198	-0.02214

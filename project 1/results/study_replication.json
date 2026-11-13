@@ -1,0 +1,8 @@
+{
+ "min_samples": 30,
+ "min_det": 3,
+ "z_study": 1.645,
+ "n_studies": 64,
+ "random_half_replication_main_positive": 0.80795,
+ "runtime_min": 0.9923373301823933
+}

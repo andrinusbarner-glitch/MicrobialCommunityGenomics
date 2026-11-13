@@ -1,0 +1,23 @@
+{
+ "rules": {
+  "version": "v1 (2026-11-11, fixed before the result)",
+  "min_study_samples": 30,
+  "seed": 21,
+  "D1_z": 3.15,
+  "D1_r": 0.2,
+  "D2_cover": 0.9,
+  "D2_min_det": 30,
+  "D3": "different order",
+  "D4_abund_z": 3.0,
+  "D4_abund_r": 0.3,
+  "D4_min_joint": 30,
+  "D5": "best H per S",
+  "V_min_det": 3,
+  "V_fdr": 0.05,
+  "n_baseline": 20000
+ },
+ "rules_hash": "68de910b1594",
+ "n_validated": 6229,
+ "n_both_folds": 583,
+ "runtime_min": 3.3519756118456523
+}

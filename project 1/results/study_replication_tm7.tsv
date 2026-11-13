@@ -1,0 +1,16 @@
+ranking	group	n_tm7	metric	tm7	control_mean	control_lo	control_hi	p
+replicating studies	all TM7	41	top1_tier1	0.2927	0.1384	0.04878	0.2439	0.005199
+replicating studies	all TM7	41	top5_tier1	0.2634	0.141	0.07805	0.2098	0.0014
+replicating studies	all TM7	41	best_rank_tier2	0.000417	0.003902	0.00184	0.007665	0.0002
+replicating studies	all TM7	41	best_rank_tier3	0.0009383	0.006791	0.003435	0.01257	0.0002
+replicating studies	all TM7	41	top10_tier3	0.5366	0.2287	0.122	0.3659	0.0002
+replicating studies	Human-associated	20	top1_tier1	0.2	0.1265	0	0.3	0.2304
+replicating studies	Human-associated	20	top5_tier1	0.18	0.1245	0.05	0.21	0.1182
+replicating studies	Human-associated	20	best_rank_tier2	0.0005734	0.004971	0.001148	0.01524	0.0005999
+replicating studies	Human-associated	20	best_rank_tier3	0.0006776	0.005569	0.001221	0.01642	0.0012
+replicating studies	Human-associated	20	top10_tier3	0.75	0.3376	0.15	0.55	0.0003999
+replicating studies	Non-saline	19	top1_tier1	0.4211	0.1635	0.05263	0.3158	0.003999
+replicating studies	Non-saline	19	top5_tier1	0.3789	0.1697	0.06316	0.2947	0.0007998
+replicating studies	Non-saline	19	best_rank_tier2	0.0003128	0.003216	0.00138	0.006376	0.0002
+replicating studies	Non-saline	19	best_rank_tier3	0.001355	0.007208	0.003348	0.01349	0.0002
+replicating studies	Non-saline	19	top10_tier3	0.3684	0.1381	0	0.3158	0.0106

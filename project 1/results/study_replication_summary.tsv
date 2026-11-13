@@ -1,0 +1,11 @@
+set	group	n	pos_ge2	pos_ge_half	any_neg	median_testable
+network edges	all	344676	0.9264	0.7812	0.04755	6
+random same-env pairs	all	134197	0.3102	0.2022	0.5182	5
+network edges	Human-associated	82089	0.8674	0.4835	0.0794	6
+random same-env pairs	Human-associated	21790	0.2084	0.07256	0.3606	5
+network edges	Animal-associated	78772	0.9092	0.8008	0.0392	4
+random same-env pairs	Animal-associated	18622	0.2731	0.237	0.4008	4
+network edges	Non-saline	51410	0.9071	0.7535	0.05627	4
+random same-env pairs	Non-saline	11495	0.209	0.2249	0.3133	3
+network edges	Saline	132405	0.9808	0.9648	0.02937	7
+random same-env pairs	Saline	82290	0.3596	0.2254	0.6152	6

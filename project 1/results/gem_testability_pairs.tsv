@@ -1,0 +1,17 @@
+pair	medium	pair_usable	pair_grows_only_together	usable_controls	testable
+positive control: Anaerostipes amylophilus+Bifidobacterium adolescentis	minimal	True	False	3	True
+positive control: Anaerostipes amylophilus+Bifidobacterium adolescentis	M9[-O2]	False	False	0	False
+one-way: Turicibacter sanguinis+Romboutsia timonensis	minimal	True	False	3	True
+one-way: Turicibacter sanguinis+Romboutsia timonensis	M9[-O2]	False	False	0	False
+one-way: Lawsonella clevelandensis_A+Cutibacterium acnes	minimal	True	False	3	True
+one-way: Lawsonella clevelandensis_A+Cutibacterium acnes	M9[-O2]	False	False	0	False
+succinate: Prevotella sp900316645+Succiniclasticum sp900315925	minimal	True	False	3	True
+succinate: Prevotella sp900316645+Succiniclasticum sp900315925	M9[-O2]	False	False	0	False
+TM7: Unknown CALMAK01+Scrofimicrobium sp014069575	minimal	True	False	3	True
+TM7: Unknown CALMAK01+Scrofimicrobium sp014069575	M9[-O2]	False	False	0	False
+TM7: Nanosynbacter sp002421965+Leucobacter sp002336855	minimal	True	False	3	True
+TM7: Nanosynbacter sp002421965+Leucobacter sp002336855	M9[-O2]	False	False	0	False
+H2: Methanobrevibacter_A smithii+SFEL01 sp004557245	minimal	True	False	3	True
+H2: Methanobrevibacter_A smithii+SFEL01 sp004557245	M9[-O2]	False	False	0	False
+methanogen: Unknown T78+Methanothrix soehngenii	minimal	True	False	3	True
+methanogen: Unknown T78+Methanothrix soehngenii	M9[-O2]	False	False	0	False
