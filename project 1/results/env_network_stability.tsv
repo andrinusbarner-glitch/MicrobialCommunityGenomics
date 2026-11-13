@@ -1,0 +1,25 @@
+group	variant	pairs	mean_jaccard	frac_in_80pct_reps	n_union	n_consensus
+Human-associated	uncontrolled	positive	0.8627	0.7516	2426582	2021118
+Human-associated	uncontrolled	negative |r|>=min_r	0.9186	0.8465	1717146	1541259
+Human-associated	uncontrolled	network edge	0.5722	0.3313	336898	161969
+Human-associated	controlled	positive	0.5711	0.3293	703249	337022
+Human-associated	controlled	negative |r|>=min_r	0.5866	0.3454	369978	181526
+Human-associated	controlled	network edge	0.4404	0.1964	325132	111616
+Animal-associated	uncontrolled	positive	0.9493	0.9041	2136018	2002225
+Animal-associated	uncontrolled	negative |r|>=min_r	0.9485	0.9007	1588847	1483061
+Animal-associated	uncontrolled	network edge	0.617	0.3909	239706	131311
+Animal-associated	controlled	positive	0.6418	0.4189	625119	354751
+Animal-associated	controlled	negative |r|>=min_r	0.6216	0.3999	426009	238274
+Animal-associated	controlled	network edge	0.4697	0.2262	244920	93879
+Non-saline	uncontrolled	positive	0.948	0.9122	2424041	2302269
+Non-saline	uncontrolled	negative |r|>=min_r	0.8947	0.8018	153201	132725
+Non-saline	uncontrolled	network edge	0.7783	0.6147	155419	113451
+Non-saline	controlled	positive	0.8312	0.7024	570697	456317
+Non-saline	controlled	negative |r|>=min_r	0.82	0.6792	303717	236915
+Non-saline	controlled	network edge	0.7376	0.5543	135249	93050
+Saline	uncontrolled	positive	0.9365	0.8791	3319054	3051260
+Saline	uncontrolled	negative |r|>=min_r	0.8804	0.781	2042674	1741956
+Saline	uncontrolled	network edge	0.6754	0.4675	227134	139837
+Saline	controlled	positive	0.8407	0.7146	2178042	1754308
+Saline	controlled	negative |r|>=min_r	0.7573	0.5892	1693021	1214071
+Saline	controlled	network edge	0.6331	0.4114	236357	133609
