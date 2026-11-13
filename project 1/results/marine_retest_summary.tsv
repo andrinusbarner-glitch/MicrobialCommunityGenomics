@@ -1,0 +1,16 @@
+half	variant	set	samples	strata	testable	confirmed	share_confirmed
+A	V0	marine shortlist	1643	21	493	493	1
+A	V0	random marine pairs	1643	21	4997	1372	0.2746
+A	V1	marine shortlist	1643	63	493	493	1
+A	V1	random marine pairs	1643	63	4997	1341	0.2684
+A	V2	marine shortlist	1643	116	493	493	1
+A	V2	random marine pairs	1643	116	4997	1275	0.2552
+B	V0	marine shortlist	552	15	406	382	0.9409
+B	V0	random marine pairs	552	15	4077	706	0.1732
+B	V1	marine shortlist	552	32	406	367	0.9039
+B	V1	random marine pairs	552	32	4077	451	0.1106
+B	V2	marine shortlist	552	33	406	367	0.9039
+B	V2	random marine pairs	552	33	4077	447	0.1096
+both	V0	marine shortlist			406	382	0.9409
+both	V1	marine shortlist			406	367	0.9039
+both	V2	marine shortlist			406	367	0.9039

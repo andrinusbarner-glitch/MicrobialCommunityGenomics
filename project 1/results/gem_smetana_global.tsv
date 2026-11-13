@@ -1,0 +1,65 @@
+community	kind	label	S	medium	members	grow_alone	usable	mip	mro
+pair|H2|Methanobrevibacter_A smithii+SFEL01 sp004557245	pair	H2	Methanobrevibacter_A smithii	minimal	RSGB23-1_GCF-000016525 (100%) + WIRB19-1_SAMEA4817948_ (100%)	yes / yes	True	2.0	0.4864864864864865
+pair|TM7|Nanosynbacter sp002421965+Leucobacter sp002336855	pair	TM7	Nanosynbacter sp002421965	minimal	MUNK22-1_SAMEA7426367_ (51%) + MUNK22-1_SAMEA4777426_ (95%)	yes / yes	True	5.0	0.45454545454545453
+pair|TM7|Unknown CALMAK01+Scrofimicrobium sp014069575	pair	TM7	Unknown CALMAK01	minimal	MUNK22-1_SAMEA7428247_ (70%) + RSGB23-1_GCF-014069575 (99%)	yes / yes	True	3.0	0.5714285714285714
+pair|methanogen|Unknown T78+Methanothrix soehngenii	pair	methanogen	Unknown T78	minimal	MUNK22-1_SAMEA13189762 (90%) + RSGB23-1_GCF-000204415 (97%)	yes / yes	True	5.0	0.6511627906976745
+pair|one-way|Lawsonella clevelandensis_A+Cutibacterium acnes	pair	one-way	Lawsonella clevelandensis_A	minimal	DANK21-1_haib18CEM5453 (100%) + RSGB23-1_GCF-020181495 (100%)	yes / yes	True	0.0	0.8571428571428571
+pair|one-way|Turicibacter sanguinis+Romboutsia timonensis	pair	one-way	Turicibacter sanguinis	minimal	RSGB23-1_GCF-013046825 (100%) + RSGB23-1_GCF-900106845 (99%)	yes / yes	True	1.0	
+pair|positive control|Anaerostipes amylophilus+Bifidobacterium adolescentis	pair	positive control	Anaerostipes amylophilus	minimal	RSGB23-1_GCF-024125185 (99%) + RSGB23-1_GCF-017815835 (100%)	yes / yes	True	2.0	0.7407407407407407
+pair|succinate|Prevotella sp900316645+Succiniclasticum sp900315925	pair	succinate	Prevotella sp900316645	minimal	LIJU20-1_SAMEA10439522 (98%) + RSGB23-1_GCF-900101645 (100%)	yes / yes	True		0.6206896551724138
+pair|H2|Methanobrevibacter_A smithii+SFEL01 sp004557245	pair	H2	Methanobrevibacter_A smithii	M9[-O2]	RSGB23-1_GCF-000016525 (100%) + WIRB19-1_SAMEA4817948_ (100%)	no / no	False		
+pair|TM7|Nanosynbacter sp002421965+Leucobacter sp002336855	pair	TM7	Nanosynbacter sp002421965	M9[-O2]	MUNK22-1_SAMEA7426367_ (51%) + MUNK22-1_SAMEA4777426_ (95%)	no / no	False		
+pair|TM7|Unknown CALMAK01+Scrofimicrobium sp014069575	pair	TM7	Unknown CALMAK01	M9[-O2]	MUNK22-1_SAMEA7428247_ (70%) + RSGB23-1_GCF-014069575 (99%)	no / no	False		
+pair|methanogen|Unknown T78+Methanothrix soehngenii	pair	methanogen	Unknown T78	M9[-O2]	MUNK22-1_SAMEA13189762 (90%) + RSGB23-1_GCF-000204415 (97%)	no / no	False		
+pair|one-way|Lawsonella clevelandensis_A+Cutibacterium acnes	pair	one-way	Lawsonella clevelandensis_A	M9[-O2]	DANK21-1_haib18CEM5453 (100%) + RSGB23-1_GCF-020181495 (100%)	no / no	False		
+pair|one-way|Turicibacter sanguinis+Romboutsia timonensis	pair	one-way	Turicibacter sanguinis	M9[-O2]	RSGB23-1_GCF-013046825 (100%) + RSGB23-1_GCF-900106845 (99%)	no / no	False		
+pair|positive control|Anaerostipes amylophilus+Bifidobacterium adolescentis	pair	positive control	Anaerostipes amylophilus	M9[-O2]	RSGB23-1_GCF-024125185 (99%) + RSGB23-1_GCF-017815835 (100%)	yes / no	False		
+pair|succinate|Prevotella sp900316645+Succiniclasticum sp900315925	pair	succinate	Prevotella sp900316645	M9[-O2]	LIJU20-1_SAMEA10439522 (98%) + RSGB23-1_GCF-900101645 (100%)	no / no	False		
+random|H2|Methanobrevibacter_A smithii+random1	random	H2	Methanobrevibacter_A smithii	minimal	RSGB23-1_GCF-000016525 (100%) + RSGB23-1_GCF-900106845 (99%)	yes / yes	True	5.0	0.46153846153846156
+random|H2|Methanobrevibacter_A smithii+random2	random	H2	Methanobrevibacter_A smithii	minimal	RSGB23-1_GCF-000016525 (100%) + MUNK22-1_SAMEA4777426_ (95%)	yes / yes	True	1.0	0.8
+random|H2|Methanobrevibacter_A smithii+random3	random	H2	Methanobrevibacter_A smithii	minimal	RSGB23-1_GCF-000016525 (100%) + MUNK22-1_SAMEA7426367_ (51%)	yes / yes	True	5.0	0.4888888888888889
+random|TM7|Nanosynbacter sp002421965+random1	random	TM7	Nanosynbacter sp002421965	minimal	MUNK22-1_SAMEA7426367_ (51%) + RSGB23-1_GCF-024125185 (99%)	yes / yes	True	6.0	0.45454545454545453
+random|TM7|Nanosynbacter sp002421965+random2	random	TM7	Nanosynbacter sp002421965	minimal	MUNK22-1_SAMEA7426367_ (51%) + MUNK22-1_SAMEA13189762 (90%)	yes / yes	True	2.0	0.711864406779661
+random|TM7|Nanosynbacter sp002421965+random3	random	TM7	Nanosynbacter sp002421965	minimal	MUNK22-1_SAMEA7426367_ (51%) + RSGB23-1_GCF-900106845 (99%)	yes / yes	True	3.0	0.6785714285714286
+random|TM7|Unknown CALMAK01+random1	random	TM7	Unknown CALMAK01	minimal	MUNK22-1_SAMEA7428247_ (70%) + RSGB23-1_GCF-900101645 (100%)	yes / yes	True		0.5581395348837209
+random|TM7|Unknown CALMAK01+random2	random	TM7	Unknown CALMAK01	minimal	MUNK22-1_SAMEA7428247_ (70%) + LIJU20-1_SAMEA10439522 (98%)	yes / yes	True	6.0	0.5641025641025641
+random|TM7|Unknown CALMAK01+random3	random	TM7	Unknown CALMAK01	minimal	MUNK22-1_SAMEA7428247_ (70%) + MUNK22-1_SAMEA13189762 (90%)	yes / yes	True	1.0	0.7777777777777778
+random|methanogen|Unknown T78+random1	random	methanogen	Unknown T78	minimal	MUNK22-1_SAMEA13189762 (90%) + WIRB19-1_SAMEA4817948_ (100%)	yes / yes	True	3.0	0.6923076923076923
+random|methanogen|Unknown T78+random2	random	methanogen	Unknown T78	minimal	MUNK22-1_SAMEA13189762 (90%) + RSGB23-1_GCF-013046825 (100%)	yes / yes	True	1.0	0.6666666666666666
+random|methanogen|Unknown T78+random3	random	methanogen	Unknown T78	minimal	MUNK22-1_SAMEA13189762 (90%) + RSGB23-1_GCF-014069575 (99%)	yes / yes	True	2.0	0.5714285714285714
+random|one-way|Lawsonella clevelandensis_A+random1	random	one-way	Lawsonella clevelandensis_A	minimal	DANK21-1_haib18CEM5453 (100%) + RSGB23-1_GCF-900101645 (100%)	yes / yes	True		0.7407407407407407
+random|one-way|Lawsonella clevelandensis_A+random2	random	one-way	Lawsonella clevelandensis_A	minimal	DANK21-1_haib18CEM5453 (100%) + RSGB23-1_GCF-900106845 (99%)	yes / yes	True	2.0	0.5789473684210527
+random|one-way|Lawsonella clevelandensis_A+random3	random	one-way	Lawsonella clevelandensis_A	minimal	DANK21-1_haib18CEM5453 (100%) + WIRB19-1_SAMEA4817948_ (100%)	yes / yes	True	4.0	0.5641025641025641
+random|one-way|Turicibacter sanguinis+random1	random	one-way	Turicibacter sanguinis	minimal	RSGB23-1_GCF-013046825 (100%) + WIRB19-1_SAMEA4817948_ (100%)	yes / yes	True	3.0	0.7555555555555555
+random|one-way|Turicibacter sanguinis+random2	random	one-way	Turicibacter sanguinis	minimal	RSGB23-1_GCF-013046825 (100%) + MUNK22-1_SAMEA7428247_ (70%)	yes / yes	True	3.0	0.6530612244897959
+random|one-way|Turicibacter sanguinis+random3	random	one-way	Turicibacter sanguinis	minimal	RSGB23-1_GCF-013046825 (100%) + RSGB23-1_GCF-900101645 (100%)	yes / yes	True		0.6153846153846154
+random|positive control|Anaerostipes amylophilus+random1	random	positive control	Anaerostipes amylophilus	minimal	RSGB23-1_GCF-024125185 (99%) + MUNK22-1_SAMEA4777426_ (95%)	yes / yes	True	1.0	0.72
+random|positive control|Anaerostipes amylophilus+random2	random	positive control	Anaerostipes amylophilus	minimal	RSGB23-1_GCF-024125185 (99%) + RSGB23-1_GCF-014069575 (99%)	yes / yes	True	1.0	0.6666666666666666
+random|positive control|Anaerostipes amylophilus+random3	random	positive control	Anaerostipes amylophilus	minimal	RSGB23-1_GCF-024125185 (99%) + RSGB23-1_GCF-000204415 (97%)	yes / yes	True	2.0	0.7857142857142857
+random|succinate|Prevotella sp900316645+random1	random	succinate	Prevotella sp900316645	minimal	LIJU20-1_SAMEA10439522 (98%) + WIRB19-1_SAMEA4817948_ (100%)	yes / yes	True	7.0	0.6111111111111112
+random|succinate|Prevotella sp900316645+random2	random	succinate	Prevotella sp900316645	minimal	LIJU20-1_SAMEA10439522 (98%) + RSGB23-1_GCF-014069575 (99%)	yes / yes	True	0.0	0.7096774193548387
+random|succinate|Prevotella sp900316645+random3	random	succinate	Prevotella sp900316645	minimal	LIJU20-1_SAMEA10439522 (98%) + RSGB23-1_GCF-024125185 (99%)	yes / yes	True	2.0	0.8461538461538461
+random|H2|Methanobrevibacter_A smithii+random1	random	H2	Methanobrevibacter_A smithii	M9[-O2]	RSGB23-1_GCF-000016525 (100%) + RSGB23-1_GCF-900106845 (99%)	no / no	False		
+random|H2|Methanobrevibacter_A smithii+random2	random	H2	Methanobrevibacter_A smithii	M9[-O2]	RSGB23-1_GCF-000016525 (100%) + MUNK22-1_SAMEA4777426_ (95%)	no / no	False		
+random|H2|Methanobrevibacter_A smithii+random3	random	H2	Methanobrevibacter_A smithii	M9[-O2]	RSGB23-1_GCF-000016525 (100%) + MUNK22-1_SAMEA7426367_ (51%)	no / no	False		
+random|TM7|Nanosynbacter sp002421965+random1	random	TM7	Nanosynbacter sp002421965	M9[-O2]	MUNK22-1_SAMEA7426367_ (51%) + RSGB23-1_GCF-024125185 (99%)	no / yes	False		
+random|TM7|Nanosynbacter sp002421965+random2	random	TM7	Nanosynbacter sp002421965	M9[-O2]	MUNK22-1_SAMEA7426367_ (51%) + MUNK22-1_SAMEA13189762 (90%)	no / no	False		
+random|TM7|Nanosynbacter sp002421965+random3	random	TM7	Nanosynbacter sp002421965	M9[-O2]	MUNK22-1_SAMEA7426367_ (51%) + RSGB23-1_GCF-900106845 (99%)	no / no	False		
+random|TM7|Unknown CALMAK01+random1	random	TM7	Unknown CALMAK01	M9[-O2]	MUNK22-1_SAMEA7428247_ (70%) + RSGB23-1_GCF-900101645 (100%)	no / no	False		
+random|TM7|Unknown CALMAK01+random2	random	TM7	Unknown CALMAK01	M9[-O2]	MUNK22-1_SAMEA7428247_ (70%) + LIJU20-1_SAMEA10439522 (98%)	no / no	False		
+random|TM7|Unknown CALMAK01+random3	random	TM7	Unknown CALMAK01	M9[-O2]	MUNK22-1_SAMEA7428247_ (70%) + MUNK22-1_SAMEA13189762 (90%)	no / no	False		
+random|methanogen|Unknown T78+random1	random	methanogen	Unknown T78	M9[-O2]	MUNK22-1_SAMEA13189762 (90%) + WIRB19-1_SAMEA4817948_ (100%)	no / no	False		
+random|methanogen|Unknown T78+random2	random	methanogen	Unknown T78	M9[-O2]	MUNK22-1_SAMEA13189762 (90%) + RSGB23-1_GCF-013046825 (100%)	no / no	False		
+random|methanogen|Unknown T78+random3	random	methanogen	Unknown T78	M9[-O2]	MUNK22-1_SAMEA13189762 (90%) + RSGB23-1_GCF-014069575 (99%)	no / no	False		
+random|one-way|Lawsonella clevelandensis_A+random1	random	one-way	Lawsonella clevelandensis_A	M9[-O2]	DANK21-1_haib18CEM5453 (100%) + RSGB23-1_GCF-900101645 (100%)	no / no	False		
+random|one-way|Lawsonella clevelandensis_A+random2	random	one-way	Lawsonella clevelandensis_A	M9[-O2]	DANK21-1_haib18CEM5453 (100%) + RSGB23-1_GCF-900106845 (99%)	no / no	False		
+random|one-way|Lawsonella clevelandensis_A+random3	random	one-way	Lawsonella clevelandensis_A	M9[-O2]	DANK21-1_haib18CEM5453 (100%) + WIRB19-1_SAMEA4817948_ (100%)	no / no	False		
+random|one-way|Turicibacter sanguinis+random1	random	one-way	Turicibacter sanguinis	M9[-O2]	RSGB23-1_GCF-013046825 (100%) + WIRB19-1_SAMEA4817948_ (100%)	no / no	False		
+random|one-way|Turicibacter sanguinis+random2	random	one-way	Turicibacter sanguinis	M9[-O2]	RSGB23-1_GCF-013046825 (100%) + MUNK22-1_SAMEA7428247_ (70%)	no / no	False		
+random|one-way|Turicibacter sanguinis+random3	random	one-way	Turicibacter sanguinis	M9[-O2]	RSGB23-1_GCF-013046825 (100%) + RSGB23-1_GCF-900101645 (100%)	no / no	False		
+random|positive control|Anaerostipes amylophilus+random1	random	positive control	Anaerostipes amylophilus	M9[-O2]	RSGB23-1_GCF-024125185 (99%) + MUNK22-1_SAMEA4777426_ (95%)	yes / no	False		
+random|positive control|Anaerostipes amylophilus+random2	random	positive control	Anaerostipes amylophilus	M9[-O2]	RSGB23-1_GCF-024125185 (99%) + RSGB23-1_GCF-014069575 (99%)	yes / no	False		
+random|positive control|Anaerostipes amylophilus+random3	random	positive control	Anaerostipes amylophilus	M9[-O2]	RSGB23-1_GCF-024125185 (99%) + RSGB23-1_GCF-000204415 (97%)	yes / no	False		
+random|succinate|Prevotella sp900316645+random1	random	succinate	Prevotella sp900316645	M9[-O2]	LIJU20-1_SAMEA10439522 (98%) + WIRB19-1_SAMEA4817948_ (100%)	no / no	False		
+random|succinate|Prevotella sp900316645+random2	random	succinate	Prevotella sp900316645	M9[-O2]	LIJU20-1_SAMEA10439522 (98%) + RSGB23-1_GCF-014069575 (99%)	no / no	False		
+random|succinate|Prevotella sp900316645+random3	random	succinate	Prevotella sp900316645	M9[-O2]	LIJU20-1_SAMEA10439522 (98%) + RSGB23-1_GCF-024125185 (99%)	no / yes	False		
